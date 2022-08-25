@@ -58,7 +58,7 @@ pipeline {
         stage('Production Approval') {
             steps {
                 script {
-                    if(env.BRANCH_NAME == "feature/test") {
+                    if(env.BRANCH_NAME == "develop") {
                         input('Proceed for Prod Deployment')
                     }
                 }
